@@ -6,6 +6,8 @@
 /* reset */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html {
   scroll-behavior: smooth;
@@ -262,6 +264,14 @@ h4 {
   .site-nav h1 {
     grid-column: 1/3;
   }
+  .site-nav {
+    min-height: 60px;
+  }
+  .site-nav h1 {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+  }
   .site-nav ul {
     display: flex;
     grid-column: 6/9;
@@ -317,6 +327,7 @@ h4 {
   #contact {
     padding: 90px 0;
   }
+
   .projects a:nth-child(1) {
     grid-column: 1/3;
   }
